@@ -1,0 +1,5 @@
+ <library path="lib/liba_star_plugin_lib">
+  <class name="global_planner/AStarExpansion" type="global_planner::AStarExpansion" base_class_type="global_planner::Expander">
+    <description>This is a global planner plugin by iroboapp project.</description>
+  </class>
+ </library>

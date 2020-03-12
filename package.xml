@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+    <name>a_star_plugin</name>
+    <version>1.16.3</version>
+    <description>
+
+        This planner is a basic a star planner, which is described in ROS navigation Tutorials.
+
+    </description>
+    <author>Daegyu Lee</author>
+    <maintainer email="lee.dk@kaist.ac.kr">Daegyu Lee</maintainer>
+    <license>BSD</license>
+    <url>http://wiki.ros.org/navigation/Tutorials/Writing%20A%20Global%20Path%20Planner%20As%20Plugin%20in%20ROS</url>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>tf2_geometry_msgs</build_depend>
+    <depend>base_local_planner</depend>
+    <depend>costmap_2d</depend>
+    <depend>eigen</depend>
+    <depend>nav_core</depend>
+    <depend>pluginlib</depend>
+    <depend>roscpp</depend>
+    <depend>tf2</depend>
+    <depend>tf2_ros</depend>
+
+    <export>
+        <nav_core plugin="${prefix}/global_planner_plugin.xml" />
+    </export>
+</package>
+
+
